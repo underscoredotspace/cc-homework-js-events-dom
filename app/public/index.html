@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
   <title>Document</title>
 </head>
 <body>
-  <form id="new-cat">
-    <input id="cat_name" placeholder="Name" type="text">
-    <input id="cat_colour" placeholder="Colour" type="text">
+  <form id="cat">
+    <input id="cat__name" placeholder="Name" type="text" required>
+    <input id="cat__colour" placeholder="Colour" type="text" required>
     <button type="submit">Add</button>
   </form>
+
+  <button id="delete-all-cats">Delete All Cats</button>
   
   <div id="cat-list"></div>
 
