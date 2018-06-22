@@ -1,0 +1,14 @@
+{
+  "name": "cc-homework-js-events-dom",
+  "version": "1.0.0",
+  "main": "app/public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel"
+  },
+  "author": "Colin Tindle <ampersand@underscore.space>",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "parcel": "^1.9.2"
+  }
+}
