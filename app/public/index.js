@@ -1,9 +1,10 @@
 (() => {
   let hue = 0
+  const catForm = document.querySelector('form#cat')
   const catList = document.querySelector('#cat-list')
   const deleteAllCats = document.querySelector('#delete-all-cats')
 
-  document.querySelector('form#cat').addEventListener('submit', e => {
+  catForm.addEventListener('submit', e => {
     e.preventDefault()
     const {cat__name, cat__colour} = e.target
 
@@ -22,7 +23,15 @@
     appendElements(catListItem, [catNameElement, catColourElement, catDeleteElement])
     catList.appendChild(catListItem)
 
-    // e.target.reset()
+    e.target.reset()
+  })
+
+  deleteAllCats.addEventListener('click', e => {
+    if (confirm('Are you sure? This seems extreme. ')) {
+      while (catList.firstChild) {
+        catList.removeChild(catList.firstChild)
+      }
+    }
   })
 
   function createElement(kind, className, content) {
