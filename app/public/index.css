@@ -1,11 +1,12 @@
 #cat-list {
   display: flex;
   flex-flow: row wrap;
+  text-align: center;
 }
 
 .cat-list__item {
   border: 1px solid black;
-  background-color: #dddddd33;
+  background-color: hsl(var(--h, 0), 100%, 97%);
   min-width: 200px;
   padding: 0.5rem;
   margin: 0.5rem;
